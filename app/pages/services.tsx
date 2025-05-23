@@ -1,13 +1,24 @@
 // ServicesSection.jsx
-import { Code, Monitor, Database, GitBranch, Server, Award } from 'lucide-react';
+import {
+  PenTool,
+  Image,
+  Layers,
+  Package,
+  BookOpenText,
+  Brush,
+} from "lucide-react";
 
 interface FeatureCardProps {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; // Assuming SVG icon
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, description }) => (
+const FeatureCard: React.FC<FeatureCardProps> = ({
+  icon: Icon,
+  title,
+  description,
+}) => (
   <div className="border bg-gradient-to-r from-blue-500 to-cyan-500 border-blue-500 rounded-md overflow-hidden group relative">
     <div className="z-10 flex flex-col gap-4 p-4 w-full min-w-[280px] xl:min-w-full min-h-[200px] h-full">
       <div className="w-[40px] h-[40px] flex items-center mb-4 p-2.5 bg-blue-800/30 rounded-[6px]">
@@ -22,58 +33,72 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, descriptio
   </div>
 );
 
-
-
 const ServicesSection = () => {
-  // Services/Skills list
   const skillsList = [
     {
-      icon: Code,
-      title: "Frontend Development",
-      description: "Creating responsive, accessible, and performant user interfaces using React, Next.js, TypeScript and modern CSS frameworks."
+      icon: BookOpenText,
+      title: "Book Editing",
+      description:
+        "Polishing manuscripts for clarity, grammar, structure, and layout—ready for print or digital publishing.",
     },
     {
-      icon: Server,
-      title: "Backend Development",
-      description: "Building robust server-side applications with Node.js, Express, and integrating with various databases and third-party services."
+      icon: PenTool,
+      title: "Graphic Design",
+      description:
+        "Creating logos, flyers, posters, and social media content that visually communicate your brand’s message.",
     },
     {
-      icon: Database,
-      title: "Database Design",
-      description: "Designing and implementing efficient database schemas, optimizing queries, and managing both SQL and NoSQL databases."
+      icon: Layers,
+      title: "Brand Identity",
+      description:
+        "Designing consistent branding elements including color schemes, typography, and brand guides.",
     },
     {
-      icon: GitBranch,
-      title: "CI/CD & DevOps",
-      description: "Setting up automated testing, deployment pipelines, and implementing best practices for continuous integration and delivery."
+      icon: Package,
+      title: "Merchandise Branding",
+      description:
+        "Custom shirt designs and branded products for events, businesses, and personal collections.",
     },
     {
-      icon: Monitor,
-      title: "Full-Stack Solutions",
-      description: "Delivering end-to-end solutions from concept to deployment with a focus on scalability, performance, and maintainability."
+      icon: Image,
+      title: "Visual Content Creation",
+      description:
+        "Crafting engaging digital assets and layouts using tools like Photoshop, Illustrator, and Canva.",
     },
     {
-      icon: Award,
-      title: "Code Quality & Architecture",
-      description: "Creating clean, maintainable code with strong architecture principles, design patterns, and comprehensive documentation."
-    }
+      icon: Brush,
+      title: "Custom Journal & Book Design",
+      description:
+        "Designing and formatting personalized notebooks and journals with a strong aesthetic focus.",
+    },
   ];
 
   return (
     <section id="services" className="relative py-16 h-full bg-backgroundColor">
       <div className="container mx-auto px-4 z-30">
         <div className="text-center mb-12 space-y-3">
-          <button type='button' className="bg-black text-bodyText px-5 py-3 text-bodySmall rounded-full transition-all duration-300">
-            Technical Expertise
+          <button
+            type="button"
+            className="bg-black text-bodyText px-5 py-3 text-bodySmall rounded-full transition-all duration-300"
+          >
+            Creative Expertise
           </button>
           <h2 className="text-black text-3xl md:text-5xl text-center font-semibold">
-            My <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500'>Skills</span> & Services
+            My{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
+              Services
+            </span>
           </h2>
         </div>
 
         <div className="grid w-full items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-6 px-5 lg:px-[50px] xl:px-[100px]">
           {skillsList.map((skill) => (
-            <FeatureCard key={skill.title} icon={skill.icon} title={skill.title} description={skill.description} />
+            <FeatureCard
+              key={skill.title}
+              icon={skill.icon}
+              title={skill.title}
+              description={skill.description}
+            />
           ))}
         </div>
       </div>
