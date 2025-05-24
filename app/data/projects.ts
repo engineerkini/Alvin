@@ -44,17 +44,7 @@ export const allBlogs: Blog[] = [
       url: "/img/project-2.png",
     },
   },
-  {
-    title: "Carpooling App",
-    excerpt:
-      "A ride-sharing platform designed and developed using Figma and the MERN stack with Tailwind CSS and TypeScript, offering a user-friendly interface for carpooling services.",
-    coverImage: "/images/img/project-1.svg",
-    date: "2021-01-15T00:00:00.000Z", // Start of 2021
-    link: "https://woohoocar.vercel.app",
-    ogImage: {
-      url: "/images/img/project-1.svg",
-    },
-  },
+
   {
     title: "Mwongozo Wa Nguu Za Jadi",
     excerpt: "leadership, betrayal, conflict, and societal issues.",
@@ -111,8 +101,7 @@ export const allBlogs: Blog[] = [
   },
   {
     title: "Language Activity Practical Book",
-    excerpt:
-      "E-tuze is a web app that connects therapists with individuals facing mental health challenges such as depression, offering professional help and support.",
+    excerpt: "Education.",
     coverImage: "/images/img/project7.png",
     date: "2022-07-05T00:00:00.000Z", // Mid-2022
     link: "https://e-tuze.netlify.app",
@@ -153,9 +142,9 @@ export const allBlogs: Blog[] = [
     },
   },
   {
-    title: "Car Rental",
+    title: "Msako Wa Haki",
     excerpt:
-      "Car Rental is an online platform that allows clients to rent cars easily and efficiently, offering a seamless experience for vehicle rentals.",
+      "Ainea anaitalii sayari yenye vimbwanga vya kila nui kwa madhumuni ya kupata haki..",
     coverImage: "/images/img/carrental.png",
     date: "2023-07-15T00:00:00.000Z", // Mid-2023
     link: "https://www.carrental.bookme.rw/",
@@ -164,9 +153,9 @@ export const allBlogs: Blog[] = [
     },
   },
   {
-    title: "Green Realtor revamped website",
+    title: "Mprira Wa Lisa na Hadithi zingine",
     excerpt:
-      "Green Realtor's revamped website helps clients know more about the services and offerings of Green Realtor. It focuses on providing a user-friendly interface and better property showcasing.",
+      "Hadithi za ziada ni msururu wa hadithi zinazofuata mfumo mpya wa elimu.",
     coverImage: "/images/img/greetor.png",
     date: "2023-10-05T00:00:00.000Z", // Q4 of 2023
     link: "https://green-realtors.strettch.com/",
