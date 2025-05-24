@@ -3,14 +3,14 @@ import {
   Phone,
   Mail,
   MapPin,
-  Github,
   Linkedin,
   Twitter,
   MessageSquare,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa"; // ✅ WhatsApp icon from react-icons
 
 interface ContactCardProps {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement> | any>;
   title: string;
   details: string;
   className?: string;
@@ -32,15 +32,13 @@ const ContactCard: React.FC<ContactCardProps> = ({
 );
 
 const ContactSection = () => {
-  // Email configuration
-  const email = "fidelniyomugabo67@gmail.com";
-  const subject = encodeURIComponent("Software Development Inquiry");
+  const email = "alvineshitakhwa@gmail.com";
+  const subject = encodeURIComponent("Editor Inquiry");
   const body = encodeURIComponent(
-    "Hello Fidel,\n\nI am reaching out regarding:\n\n- A potential software development project\n- Collaboration opportunity\n- Other professional inquiry\n\nLooking forward to connecting with you.\n\nBest regards,"
+    "Hello Alvine,\n\nI am reaching out regarding:\n\n- A potential Book Editor project\n- Collaboration opportunity\n- Other professional inquiry\n\nLooking forward to connecting with you.\n\nBest regards,"
   );
   const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
 
-  // Contact information
   const contactInfo = [
     {
       icon: Phone,
@@ -50,7 +48,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email Me",
-      details: "fidelniyomugabo67@gmail.com",
+      details: "alvineshitakhwa@gmail.com",
     },
     {
       icon: MapPin,
@@ -58,6 +56,9 @@ const ContactSection = () => {
       details: "Nairobi Kenya",
     },
   ];
+
+  const whatsappLink =
+    "https://wa.me/254716902010?text=Hello%2C%20I'm%20interested%20in%20working%20with%20you";
 
   return (
     <section id="contact" className="relative w-full bg-white py-20 h-full">
@@ -88,24 +89,24 @@ const ContactSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 xl:gap-6 2xl:gap-8 px-5 lg:px-[50px] xl:px-[100px] mt-16">
-          {contactInfo.map((info, index) => (
+          {contactInfo.map((info) => (
             <ContactCard key={info.title} {...info} />
           ))}
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="text-white text-xl mb-4">Find me on</h3>
+          <h3 className="text-black text-xl mb-4">Find me on</h3>
           <div className="flex justify-center gap-6">
             <a
-              href="https://github.com/NiyomugaboFidel"
+              href={whatsappLink}
               target="_blank"
               rel="noreferrer"
-              className="text-gray-400 hover:text-blue-500 transition-colors"
+              className="text-gray-400 hover:text-green-500 transition-colors"
             >
-              <Github className="w-6 h-6" />
+              <FaWhatsapp className="w-6 h-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/niyomugabo-fidele-5201312b7/"
+              href="https://www.linkedin.com/in/alvine-shitakhwa-b-a-kisw-hons-m-a-kisw-931809153/"
               target="_blank"
               rel="noreferrer"
               className="text-gray-400 hover:text-blue-500 transition-colors"

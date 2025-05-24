@@ -36,9 +36,10 @@ const HeroSection = () => {
           </div>
 
           <p className="px-5 sm:max-w-lg text-[16px] text-gray-500 text-center mx-auto leading-[24px] animate-fade-in-delay">
-            I specialize in book editing, graphic design, branding, and custom
-            merchandise. From concept to final product, I create clean,
-            compelling content and visuals that connect and inspire.
+            specialize in book editing, layout design, branding, and content
+            creation. I enhance stories through meticulous editing, creative
+            visuals, and impactful communication across print and digital
+            platforms
           </p>
 
           <div className="flex gap-4 justify-center mt-8">

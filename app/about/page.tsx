@@ -22,15 +22,16 @@ const About: React.FC = () => {
           </div>
 
           <p className="text-black/60 text-bodyDefault md:text-bodyLager leading-bodyDefault text-center lg:text-start w-full min-w-[280px] md:w-3/4 xl:w-3/4">
-            I’m Alvine, a passionate and detail-oriented creative specialist
-            with experience in book editing, graphic design, branding, and
-            merchandise design. I excel at transforming ideas into polished,
-            impactful visual and written content that resonates with audiences.
+            I’m Alvine, a seasoned editor and creative professional with
+            expertise in book editing, layout design, branding, and merchandise.
+            I have collaborated with leading publishers and organizations to
+            craft content that informs, inspires, and engages.
           </p>
           <p className="text-black/60 text-bodyDefault md:text-bodyLager leading-bodyDefault text-center lg:text-start md:w-2/4 xl:w-3/4 mt-4">
-            My mission is to create impactful designs and content that engage
-            audiences. I continuously refine my skills and collaborate to
-            deliver high-quality creative solutions.{" "}
+            My mission is to elevate storytelling through meticulous editing,
+            compelling visuals, and strategic communication. I thrive in
+            collaborative environments, delivering high-quality creative
+            solutions that meet both literary and commercial goals.{" "}
           </p>
           <button
             type="button"
