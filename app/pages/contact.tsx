@@ -114,7 +114,7 @@ const ContactSection = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://x.com/ni_fidele"
+              href="https://x.com/kini"
               target="_blank"
               rel="noreferrer"
               className="text-gray-400 hover:text-blue-500 transition-colors"
